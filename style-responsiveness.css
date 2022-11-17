@@ -1,230 +1,208 @@
-
 /**rESPONSIVNES IN RELATION TO LAYOUT AND READABILITY.
 -*NOT DEVICE SIZES
 **/
 
-
-
-
-
-
-
 /****Big SIZE***/
 
-
-
-@media(max-width:75em){
-  .menu-grid{
+@media (max-width: 75em) {
+  .menu-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-
-
-
 /***MID  SIZE-MOBILE NAV***/
 
-@media(max-width:60em){
-
+@media (max-width: 60em) {
   /***GENERAL**/
 
-  html{
-    font-size: 56.25%
+  html {
+    font-size: 56.25%;
   }
-
-
 
   /***NAVIGATION**/
 
-
-  .hamburger{
-    display:block;
+  .hamburger {
+    display: block;
   }
 
-  .hamburger.active .bar:nth-child(2){
-    opacity:0
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
   }
-  .hamburger.active .bar:nth-child(1){
-    transform: translateY(.8rem) rotate(45deg);
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(0.8rem) rotate(45deg);
   }
-  .hamburger.active .bar:nth-child(3){
-    transform: translateY(-.8rem) rotate(-45deg);
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-0.8rem) rotate(-45deg);
   }
 
-  .header{
-    position:fixed;
-    top:0;
+  .header {
+    position: fixed;
+    top: 0;
     z-index: 500;
-    width:100%;
+    width: 100%;
   }
 
-  .main-nav{
-    position:fixed;
+  .main-nav {
+    position: fixed;
     left: -100%;
-    top:5rem;
-    gap:7rem;
-    flex-direction:column;
+    top: 5rem;
+    gap: 7rem;
+    flex-direction: column;
     background-color: rgb(0, 0, 0);
-    width:100%;
+    width: 100%;
     text-align: center;
     transition: 300ms;
-    height:100vh;
-    z-index:100;
+    height: 100vh;
+    z-index: 100;
   }
-
-
 
   li {
-    margin-top:5rem;
+    margin-top: 5rem;
   }
 
-  .nav-link:link{
-    font-size:2.4rem;
+  .nav-link:link {
+    font-size: 2.4rem;
   }
 
-  .main-nav.active{
-    left:0;
+  .main-nav.active {
+    left: 0;
   }
 
   /****HERO SECTION****/
 
-  .grid.hero{
+  .grid.hero {
     grid-template-columns: 1fr 1fr;
-    gap:4rem;
+    gap: 4rem;
     align-items: bottom;
   }
-  
-  .text-container{
+
+  .text-container {
     align-self: flex-end;
   }
 
   .card-img {
-    scale:1.2;
+    scale: 1.2;
   }
   .card--left-img {
-    scale:1.2;
+    scale: 1.2;
   }
 
   /** SPEISEKART**/
 
-  .meal-type-title{
-    top:6.5rem;
+  .meal-type-title {
+    top: 6.5rem;
   }
-
 }
 
-@media(max-width:47.5em){
-  
+@media (max-width: 47.5em) {
   /**General Layout**/
 
-  .container{
+  .container {
     padding: 0 1.2rem;
   }
-  
+
   /**NAV SECTION**/
-.nav{
-  padding:1rem;
-}
+  .nav {
+    padding: 1rem;
+  }
 
   /**HERO SECTION**/
 
-  .img-container{
-    display:none;
+  .img-container {
+    display: none;
   }
 
-  .hero-section{
-    height:100vh;
+  .hero-section {
+    height: 100vh;
   }
 
-  .grid.hero{
-    display:block;
+  .grid.hero {
+    display: block;
   }
 
-  .text-container{
-    grid-column:1 /span 2;
+  .text-container {
+    grid-column: 1 / span 2;
     padding-bottom: 8rem;
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    height:100vh
+    height: 100vh;
   }
 
-  .hero-intro{
+  .hero-intro {
     margin-top: 7rem;
   }
 
-  .hero-title{
-    font-size:4rem;
+  .hero-title {
+    font-size: 4rem;
     justify-self: baseline;
   }
 
-  .hero-cta{
-    bottom:0;
+  .hero-cta {
+    bottom: 0;
   }
 
-  .hero-background{
+  .hero-background {
     background-image: linear-gradient(
-      to  bottom,
-      rgba(0, 0, 0, 1),
-      rgba(255, 255, 255, 0)
-    ),
-    url("/hero\ img.jpg");;
+        to bottom,
+        rgba(0, 0, 0, 1),
+        rgba(255, 255, 255, 0)
+      ),
+      url("https://source.unsplash.com/1690x900/?restaurant");
     background-repeat: no-repeat;
     background-size: cover;
-    height:100%;
+    height: 100%;
   }
 
   /****CONTENT SECTION***/
 
-  .content-card{
+  .content-card {
     grid-template-columns: 1fr;
     align-items: center;
     justify-content: center;
-    gap:2.4rem;
+    gap: 2.4rem;
   }
 
-  .text-content{
-    gap:2rem;
+  .text-content {
+    gap: 2rem;
   }
 
-  .card-img{
+  .card-img {
     justify-self: center;
-    scale:1;
-    width:100%;
-    border-radius:9px 9px 0 0 ;
-    grid-row:1 ;
+    scale: 1;
+    width: 100%;
+    border-radius: 9px 9px 0 0;
+    grid-row: 1;
   }
-  .card--left-img{
+  .card--left-img {
     justify-self: center;
-    scale:1;
-    border-radius:9px 9px 0 0 ;
-    width:100%;
-    margin:0 auto;
+    scale: 1;
+    border-radius: 9px 9px 0 0;
+    width: 100%;
+    margin: 0 auto;
   }
-
-
 
   /**Speisekarte**/
 
-  .menu-grid{
+  .menu-grid {
     grid-template-columns: 1fr;
-    gap:2rem;
-    margin-top:2rem;
+    gap: 2rem;
+    margin-top: 2rem;
   }
 
-  .menu-item{
-    margin-left:0;
+  .menu-item {
+    margin-left: 0;
   }
 
-  .type-title{
-    margin:0;
+  .type-title {
+    margin: 0;
   }
 
-  .meal-description{
+  .meal-description {
     max-width: 25rem;
   }
 
-  .meal-type-title{
-    top:4.5rem;
+  .meal-type-title {
+    top: 4.5rem;
   }
 }
