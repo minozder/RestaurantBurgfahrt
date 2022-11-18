@@ -206,3 +206,21 @@
     top: 4.5rem;
   }
 }
+
+@media screen and (orientation:landscape){
+  .main-nav{
+    flex-direction: row;
+    gap:1rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-nav .nav-link{
+    font-size:1.8rem;
+    
+  }
+
+  .main-nav li{
+    margin-top:0;
+  }
+}
