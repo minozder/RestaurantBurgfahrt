@@ -414,7 +414,7 @@ html {
 .card-img {
   height: 22rem;
   width: 22rem;
-  scale: 1.4;
+  transform:scale(1.4);
   border-radius: 9px;
   object-fit: cover;
 }
@@ -422,7 +422,7 @@ html {
 .card--left-img {
   height: 22rem;
   width: 22rem;
-  scale: 1.4;
+  transform:scale(1.4);
   border-radius: 9px;
   margin-left: auto;
   object-fit: cover;
@@ -632,3 +632,4 @@ html {
   text-align: center;
   color: #f1f3f5;
 }
+
