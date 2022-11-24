@@ -456,6 +456,17 @@ html {
   font-size: 1.8rem;
 }
 
+
+.catering-buttons{
+  display:flex;
+  justify-content:center;
+  gap:4rem;
+}
+
+.card-cta .card-btn-p{
+  padding:0.4rem 4.425rem;
+}
+
 .card-btn {
   border: solid 2px #555;
   padding: 0.4rem 1.8rem;

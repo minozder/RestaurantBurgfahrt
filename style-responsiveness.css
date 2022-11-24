@@ -149,9 +149,8 @@
   }
 
   .hero-cta {
-    background-color: #333;
+    backdrop-filter: blur(50px);
     border: none;
-    opacity:.8;
     font-size:2rem;
     padding: 2rem;
     text-align: center;
@@ -195,6 +194,10 @@
     border-radius: 9px 9px 0 0;
     width: 100%;
     margin: 0 auto;
+  }
+
+  .catering-buttons{
+    flex-direction:column;
   }
 
   /**Speisekarte**/
